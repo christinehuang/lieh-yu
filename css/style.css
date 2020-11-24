@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700&subset=chinese-traditional');
+@import url('https://fonts.googleapis.com/css?family=Spectral:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Noto Sans TC', 'Microsoft JhengHei', '微軟正黑體', 'Heiti TC', 'Segoe UI', SegoeUI, sans-serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    -webkit-text-size-adjust: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+a,
+a:hover,
+a:focus {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+/*==================================================================================================*/
+.variable {}
+
+.slick-slide {
+    height: 290px;
+}
+
+.banner-slide-wrapper {
+    background-color: #00935F;
+    display: flex !important;
+    flex-direction: row;
+    width: 100%;
+}
+
+.banner-slide-wrapper .text-area {
+    width: 35%;
+    height: auto;
+    padding: 40px;
+    color: #FFF;
+}
+
+.banner-slide-wrapper .text-area h1,
+.banner-slide-wrapper .text-area h2 {
+    margin-bottom: 12px;
+    font-weight: 300;
+}
+
+.banner-slide-wrapper .text-area h1 {
+    font-size: 25.6px;
+    letter-spacing: 3px;
+    line-height: 29px;
+}
+
+.banner-slide-wrapper .text-area h2 {
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+.banner-slide-wrapper .text-area h3 {
+    font-size: 45px;
+    letter-spacing: 2.5px;
+    line-height: 50px;
+    font-weight: 400;
+}
+
+.banner-slide-wrapper .img-wrapper {
+    height: 290px;
+    width: 65%;
+    overflow: hidden;
+}
+
+.banner-slide-wrapper .img-wrapper img {
+    min-height: 290px;
+    width: auto;
+    position: relative;
+    top: -40%;
+}
+
+.banner .prev-arrow {
+    position: absolute;
+    top: 45%;
+    left: 10px;
+    z-index: 99;
+    opacity: 0;
+    -webkit-transition: all .6s !important;
+    -moz-transition: all .6s !important;
+    -o-transition: all .6s !important;
+    transition: all .6s !important;
+}
+
+.banner .next-arrow {
+    position: absolute;
+    top: 45%;
+    right: 10px;
+    z-index: 99;
+    opacity: 0;
+    -webkit-transition: all .6s !important;
+    -moz-transition: all .6s !important;
+    -o-transition: all .6s !important;
+    transition: all .6s !important;
+}
+
+.banner:hover .prev-arrow,
+.banner:hover .next-arrow {
+    opacity: 1;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 15px !important;
+    width: 35% !important;
+    text-align: left !important;
+    padding-left: 33px !important;
+}
+
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+    color: #FFF !important;
+}
+
+.slick-dots li {
+    margin: 0 1px !important;
+}
+
+.top-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.top-menu li {
+    float: left;
+}
+
+.top-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.top-menu li a:hover:not(.active) {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.top-menu .active {
+  background-color: #4CAF50;
+}
+
+
+
+
+
+
+
+
+
+

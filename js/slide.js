@@ -9,17 +9,17 @@ $(document).on('ready', function() {
  });
 
  $slickElement.slick({
-        dots: false,
-        prevArrow: '<div class="slide-arrow prev-arrow"><img src="images/slide-prev.svg" alt=""></div>',
-        nextArrow: '<div class="slide-arrow next-arrow"><img src="images/slide-next.svg" alt=""></div>',
+        dots: true,
+        prevArrow: '<div class="slide-arrow prev-arrow white"><img src="images/banner-arrow-left.svg" alt=""></div>',
+        nextArrow: '<div class="slide-arrow next-arrow white"><img src="images/banner-arrow-right.svg" alt=""></div>',
         infinite: true,
         variableWidth: false,
         speed: 600,
-        centerMode: true,
-        centerPadding: '23%',
+        centerMode: false,
+        adaptiveHeight: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 4200, 
         responsive: [
         {
