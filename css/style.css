@@ -18,6 +18,7 @@ body {
     color: #333;
     background-color: #fff;
     -webkit-text-size-adjust: none;
+    text-align: center;
 }
 
 * {
@@ -49,19 +50,30 @@ a:focus {
     padding: 0px;
     text-decoration: none;
 }
+/*=================
+color
+#DCE4EF   灰藍
+#CFD9E8   深灰藍
+#00935F   綠色
+#FFDB00   黃色
+#003265   藍色
+=======================*/
 
 /*==================================================================================================*/
-.variable {}
+.variable {
+    background-color: #00935F;
+}
 
 .slick-slide {
     height: 290px;
 }
 
 .banner-slide-wrapper {
-    background-color: #00935F;
     display: flex !important;
     flex-direction: row;
     width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
 }
 
 .banner-slide-wrapper .text-area {
@@ -69,6 +81,7 @@ a:focus {
     height: auto;
     padding: 40px;
     color: #FFF;
+    text-align: left;
 }
 
 .banner-slide-wrapper .text-area h1,
@@ -100,15 +113,25 @@ a:focus {
     height: 290px;
     width: 65%;
     overflow: hidden;
+    position: relative;
 }
 
 .banner-slide-wrapper .img-wrapper img {
     min-height: 290px;
+    min-width: 990px;
     width: auto;
     position: relative;
     top: -40%;
 }
-
+.banner-slide-wrapper .img-wrapper:before{
+    content: url(../images/banner-img-front.svg);
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    display: block;
+    width:154px;
+    z-index: 999;
+}
 .banner .prev-arrow {
     position: absolute;
     top: 45%;
@@ -141,9 +164,9 @@ a:focus {
 .slick-dots {
     position: absolute;
     bottom: 15px !important;
-    width: 35% !important;
-    text-align: left !important;
-    padding-left: 33px !important;
+    width: 100% !important;
+    text-align: center !important;
+    left: calc(-100vw*.46) !important;
 }
 
 .slick-dots li button:before,
@@ -155,12 +178,26 @@ a:focus {
     margin: 0 1px !important;
 }
 
+.top-menu{
+    display:block;
+    height: 97px;
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+}
+.nav-logo{
+    display: block;
+}
+.nav-logo img{
+    height: 45px;
+    width: auto;
+}
 .top-menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #FFF;
     position: fixed;
     top: 0;
     width: 100%;
@@ -170,23 +207,32 @@ a:focus {
     float: left;
 }
 
+.top-menu li:first-child a, .top-menu li:first-child a:hover:not(.active) {
+    padding-right: 190px;
+    padding-top: 25px!important;
+}
+
 .top-menu li a {
     display: block;
-    color: white;
+    color: #070303;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    padding: 39px 26px;
+    -webkit-transition: all .6s !important;
+    -moz-transition: all .6s !important;
+    -o-transition: all .6s !important;
+    transition: all .6s !important;
 }
 
 .top-menu li a:hover:not(.active) {
     display: block;
-    color: white;
+    color: #00935F;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    padding: 39px 26px;
 }
 .top-menu .active {
-  background-color: #4CAF50;
+  color: #00935F;
 }
 
 
