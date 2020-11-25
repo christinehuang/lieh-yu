@@ -58,8 +58,8 @@ color
 #FFDB00   黃色
 #003265   藍色
 =======================*/
-
 /*==================================================================================================*/
+/*====================banner=============================*/
 .variable {
     background-color: #00935F;
 }
@@ -177,13 +177,16 @@ color
 .slick-dots li {
     margin: 0 1px !important;
 }
-
+/*====================banner=============================*/
+/*====================header=============================*/
 .top-menu{
     display:block;
     height: 97px;
     width: 100%;
     max-width: 1450px;
     margin: 0 auto;
+    position: relative;
+    z-index: 9999;
 }
 .nav-logo{
     display: block;
@@ -234,7 +237,173 @@ color
 .top-menu .active {
   color: #00935F;
 }
+/*====================header=============================*/
+/*====================index-news=============================*/
 
+.news{
+    padding-top: 90px;
+    background-color: #FFF;
+}
+.news .news1{
+    width: 80%;
+    float: right;
+    background-color: #DCE4EF;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 460px;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.news1.fade-in{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.news1 .news1-pic, .news2 .news1-pic{
+    width: 28%;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateX(-50px);
+}
+.news1-pic.fade-in-left{
+    opacity: 1;
+    transform: translateX(0px);
+}
+.news1 .news1-pic img, .news2 .news1-pic img{
+    position: relative;
+    width: auto;
+    height: 460px;
+    left: -50%;
+}
+.news1:before{
+    content: url(../images/index-news-icon.svg);
+    display: inline-block;
+    position: absolute;
+    z-index: 99;
+    left: -120px;
+    top: 175px;
+}
+.news1 .news1-list, .news2 .news1-list{
+    width: 72%;
+    padding-right: 8%;
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 40px;
+    position: relative;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.news1-list.fade-in{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.news1-list h2, .news2-list h2{
+    font-family: 'Noto Sans TC'
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    color: #302D2C;
+}
+
+.news1-list ul, .news2-list ul{
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.news1-list li, .news2-list ul{
+    margin-bottom: 15px;
+}
+
+.news1-list li a, .news2-list li a{
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #302D2C;
+}
+.news1-list li a:hover{
+    color: #003265;
+}
+.news1-list .more{
+    display: inline-block;
+    position: absolute;
+    padding-right: 24px;
+    left: 0;
+    bottom: 0;
+    background-color: #FFDB00;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.news1-list .more a{
+    display: inline-block;
+    padding: 15px;
+    padding-right: 0px;
+    color: #302D2C;
+}
+.news1-list .more:after{
+    content: url(../images/more-arrow.svg);
+    position: relative;
+    display: inline-block;
+    margin-left: 4px;
+    transform: scale(2);
+    transform-origin: left;
+    top: -3.5px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.news1-list .more:hover{
+    padding-right: 40px;
+}
+
+.news .news2{
+    width: 90%;
+    float: right;
+    padding-left: 6.5%;
+    padding-right: 8%;
+    background-color: #DCE4EF;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 460px;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.news2.fade-in{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.news2 .news1-pic{
+    width: 33%;
+}
+.news2 .news1-list{
+    width: 67%;
+}
+.news2 .news1-list .more {
+    right: 0;
+    left: auto;
+}
+/*====================index-news=============================*/
 
 
 
