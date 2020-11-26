@@ -600,8 +600,51 @@ color
     position: relative;
     padding: 2% 10%; 
 }
-
-
+.link-wrapper li{
+    background-color: #DCE4EF;
+    padding: 20px;
+    text-align: left;
+    width: 240px!important;
+    margin-right: 2%;
+    position: relative;
+}
+.link-wrapper li a{
+    color: #070303;
+}
+.link-wrapper li:after{
+   content: url(../images/link-icon.svg);
+   display: inline-block;
+   position: absolute;
+   transform: scale(1.4);
+   right: 8px;
+    bottom: 3px;
+}
+.link-wrapper li h5{
+    font-family: 'Noto Sans TC';
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: .5px;
+    line-height: 20px;
+}
+.link-wrapper li p{
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
+    font-size: 8px;
+    letter-spacing: .5px;
+}
+.link-list .prev-arrow, .link-list .next-arrow{
+    display: block;
+    position: absolute;
+    right: -50px;
+    top: 15px;
+    cursor: pointer;
+}
+.link-list .next-arrow{
+    top: 45px;
+}
+.link-list .prev-arrow img, .link-list .next-arrow img{
+    transform: scale(2);
+}
 /*====================index-links=============================*/
 
 
