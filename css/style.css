@@ -60,6 +60,10 @@ color
 =======================*/
 /*==================================================================================================*/
 /*====================banner=============================*/
+.banner{
+    margin-top: 97px;
+}
+
 .variable {
     background-color: #00935F;
 }
@@ -110,14 +114,14 @@ color
 }
 
 .banner-slide-wrapper .img-wrapper {
-    height: 290px;
+    height: 350px;
     width: 65%;
     overflow: hidden;
     position: relative;
 }
 
 .banner-slide-wrapper .img-wrapper img {
-    min-height: 290px;
+    min-height: 350px;
     min-width: 990px;
     width: auto;
     position: relative;
@@ -183,10 +187,10 @@ color
     display:block;
     height: 97px;
     width: 100%;
-    max-width: 1450px;
-    margin: 0 auto;
-    position: relative;
+    background-color: #FFF;
+    position: fixed;
     z-index: 9999;
+    top: 0;
 }
 .nav-logo{
     display: block;
@@ -197,11 +201,10 @@ color
 }
 .top-menu ul {
     list-style-type: none;
-    margin: 0;
+    max-width: 1450px;
+    margin: 0 auto;
     padding: 0;
     overflow: hidden;
-    background-color: #FFF;
-    position: fixed;
     top: 0;
     width: 100%;
 }
@@ -312,10 +315,10 @@ color
     transform: translateY(0px);
 }
 .news1-list h2, .news2-list h2{
-    font-family: 'Noto Sans TC'
+    font-family: 'Noto Sans TC';
     width: 100%;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 20px;
     color: #302D2C;
 }
 
@@ -337,7 +340,7 @@ color
 .news1-list li a:hover{
     color: #003265;
 }
-.news1-list .more{
+.more{
     display: inline-block;
     position: absolute;
     padding-right: 24px;
@@ -349,13 +352,16 @@ color
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
-.news1-list .more a{
+.more a{
+    font-family: 'Noto Sans TC';
+    font-weight: 500;
+    font-size: 14px;
     display: inline-block;
     padding: 15px;
     padding-right: 0px;
     color: #302D2C;
 }
-.news1-list .more:after{
+.more:after{
     content: url(../images/more-arrow.svg);
     position: relative;
     display: inline-block;
@@ -368,20 +374,20 @@ color
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
-.news1-list .more:hover{
+.more:hover{
     padding-right: 40px;
 }
 
 .news .news2{
     width: 90%;
     float: right;
-    padding-left: 6.5%;
+    padding-left: 8%;
     padding-right: 8%;
     background-color: #DCE4EF;
     display: flex;
     flex-direction: row;
     position: relative;
-    height: 460px;
+    height: 540px;
     -webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
     -o-transition: all 0.8s;
@@ -402,13 +408,201 @@ color
 .news2 .news1-list .more {
     right: 0;
     left: auto;
+    bottom: 80px;
 }
 /*====================index-news=============================*/
+/*====================index-international=============================*/
+
+.inter-wrapper {
+    width: 80%;
+    float: left;
+    padding-left: 8%;
+    background-color: #00935F;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 540px;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.inter-wrapper.fade-in{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.inter-list{
+    width: 67%;
+    padding-right: 8%;
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 25px;
+    position: relative;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.inter-list.fade-in{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.inter-list h2{
+    font-family: 'Noto Sans TC';
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFF;
+}
+
+.inter-list ul{
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.inter-list li{
+    margin-bottom: 15px;
+}
+
+.inter-list li a{
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #FFF;
+}
+.inter-list li a:hover{
+    color: #FFDB00;
+}
+
+.inter-list .more {
+    right: 0;
+    left: auto;
+    bottom: 80px;
+}
+
+.inter-pic{
+    width: 45%;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateX(-50px);
+}
+.inter-pic.fade-in-left{
+    opacity: 1;
+    transform: translateX(0px);
+}
+.inter-pic img{
+    position: relative;
+    width: auto;
+    height: 460px;
+    min-width: 590px;
+    left: 0%;
+}
+.inter-wrapper:before{
+    content: url(../images/index-inter.svg);
+    position: absolute;
+    display: inline-block;
+    z-index: 999;
+    transform: scale(1.8);
+    z-index: 999;
+    top: 147px;
+    right: -75px;
+}
+/*====================index-international=============================*/
+/*====================index-photo=============================*/
+.album-wrapper{
+    float: left;
+    width: 100%;
+    background-color: #FFDB00;
+    background-image: url(../images/album-bg.svg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 290px;
+    position: relative;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.album-wrapper.fade-in{
+    opacity: 1;
+    transform: translateY(0px);
+}
+\.album-title {
+    position: relative;
+}
+.album-title h2{
+    position: absolute;
+    left: 10%;
+    top: 40px;
+    font-size: 20px;
+}
+.album-list{
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 8%;
+    padding-top: 105px;
+    height: 420px;
+}
+.album-list .album-pic-wrapper{
+    width: 195px!important;
+    height: 195px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.album-list .album-pic-wrapper img{
+    position: relative;
+    width: 240px;
+    height: auto;
+    left: -5%;
+    min-height: 200px;
+}
+.album-list .prev-arrow, .album-list .next-arrow{
+    display: block;
+    position: absolute;
+    right: 8%;
+    top: 320px;
+    cursor: pointer;
+}
+.album-list .next-arrow{
+    top: 350px;
+}
+.album-list .prev-arrow img, .album-list .next-arrow img{
+    transform: scale(2);
+}
+.index-belt{
+    width: 100%;
+    float: left;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.index-belt img{
+    width: 100%;
+}
+/*====================index-photo=============================*/
+/*====================index-links=============================*/
+.link-wrapper{
+    width: 100%;
+    float: left;
+    position: relative;
+    padding: 2% 10%; 
+}
 
 
-
-
-
+/*====================index-links=============================*/
 
 
 

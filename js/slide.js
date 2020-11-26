@@ -81,15 +81,15 @@ $(document).on('ready', function() {
 });
 
 $(document).on('ready', function() {
-        $(".traffic-slide").slick({
+        $(".album-list").slick({
             dots: false,
-            prevArrow: '<div class="slide-arrow prev-arrow"><img src="images/slide-prev.svg" alt=""></div>',
-            nextArrow: '<div class="slide-arrow next-arrow"><img src="images/slide-next.svg" alt=""></div>',
+            prevArrow: '<div class="slide-arrow prev-arrow"><img src="images/next-black-arrow.svg" alt=""></div>',
+            nextArrow: '<div class="slide-arrow next-arrow"><img src="images/prev-black-arrow.svg" alt=""></div>',
             infinite: true,
             variableWidth: false,
             speed: 800,
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 4,
+            slidesToScroll: 4,
             responsive: [{
                     breakpoint: 1024,
                     settings: {
