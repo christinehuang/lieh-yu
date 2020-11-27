@@ -4,13 +4,26 @@ $(document).ready(function(){
   var controller = new ScrollMagic.Controller();
 
 
+  $('.top-menu').each(function(){
+
+    //build a scene
+  var ourScene8 = new ScrollMagic.Scene({
+      triggerElement: '#news',
+      triggerHook: 0.2,
+      reverse: true
+  })
+  .setClassToggle(this, 'fix-bar') //add class to section1-pic
+  .addTo(controller);
+  });
+
+
   $('.news1').each(function(){
 
     //build a scene
-  var ourScene12 = new ScrollMagic.Scene({
+  var ourScene25 = new ScrollMagic.Scene({
       triggerElement: this,
-      triggerHook: 0.8,
-      reverse: true
+      triggerHook: 1,
+      reverse: false
   })
   .setClassToggle(this, 'fade-in') //add class to section1-pic
   .addTo(controller);
@@ -22,7 +35,7 @@ $(document).ready(function(){
   var ourScene12 = new ScrollMagic.Scene({
       triggerElement: this,
       triggerHook: 0.7,
-      reverse: true
+      reverse: false
   })
   .setClassToggle(this, 'fade-in-left') //add class to section1-pic
   .addTo(controller);
@@ -34,7 +47,7 @@ $(document).ready(function(){
   var ourScene12 = new ScrollMagic.Scene({
       triggerElement: this,
       triggerHook: 0.7,
-      reverse: true
+      reverse: false
   })
   .setClassToggle(this, 'fade-in') //add class to section1-pic
   .addTo(controller);
@@ -89,6 +102,18 @@ $(document).ready(function(){
   });
 
   $('.album-wrapper').each(function(){
+
+    //build a scene
+  var ourScene12 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.8,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addTo(controller);
+  });
+
+  $('.index-belt').each(function(){
 
     //build a scene
   var ourScene12 = new ScrollMagic.Scene({
