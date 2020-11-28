@@ -8,7 +8,7 @@ $(document).ready(function(){
 
     //build a scene
   var ourScene8 = new ScrollMagic.Scene({
-      triggerElement: '#news',
+      triggerElement: '#firstsection',
       triggerHook: 0.2,
       reverse: true
   })
@@ -125,5 +125,101 @@ $(document).ready(function(){
   .addTo(controller);
   });
 
+  $('.about-history').each(function(){
+
+    //build a scene
+  var ourScene12 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.8,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addTo(controller);
+  });
+
+
+  $('.about-logo-wrapper').each(function(){
+
+    //build a scene
+  var ourScene12 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.8,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addTo(controller);
+  });
+
+  $('.traffic-right').each(function(){
+
+    //build a scene
+  var ourScene12 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.5,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addTo(controller);
+  });
+
+  $('.traffic-left').each(function(){
+
+    //build a scene
+  var ourScene12 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.8,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addTo(controller);
+  });
+
+  $('.about-staff').each(function(){
+
+    //build a scene
+  var ourScene12 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.8,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addTo(controller);
+  });
+
+  $('.about-motto').each(function(){
+
+    //build a scene
+  var ourScene12 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.8,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addTo(controller);
+  });
+
+  $('.about-bottom-pic').each(function(){
+
+    //build a scene
+  var ourScene12 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.8,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addTo(controller);
+  });
+
+  $('.sub-menu').each(function(){
+
+    //build a scene
+  var ourScene12 = new ScrollMagic.Scene({
+      triggerElement: '#firstsection',
+      triggerHook: 0.5,
+      reverse: true
+  })
+  .setClassToggle(this, 'scroll') //add class to section1-pic
+  .addTo(controller);
+  });
 
 });

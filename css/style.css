@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700&subset=chinese-traditional');
 @import url('https://fonts.googleapis.com/css?family=Spectral:400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap');
 
 
 html,
@@ -233,6 +234,7 @@ color
 
 .top-menu li {
     float: left;
+    position: relative;
 }
 
 .top-menu li:first-child a,
@@ -271,7 +273,46 @@ color
 .top-menu .active {
     color: #00935F;
 }
-
+.top-menu li:hover .sub-menu{
+    opacity: 1;
+}
+.sub-menu{
+    position: absolute;
+    width: 180px!important;
+    text-align: left;
+    background-color: #FFF;
+    top: 97px;
+    opacity: 0;
+    -webkit-transition: all .6s !important;
+    -moz-transition: all .6s !important;
+    -o-transition: all .6s !important;
+    transition: all .6s !important;
+}
+.sub-menu.scroll{
+    top: 85px;
+}
+.top-menu li:hover .sub-menu.scroll{
+    top: 85px;
+}
+.sub-menu p{
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 12px 30px;
+}
+.sub-menu a{
+    padding: 0!important;
+    text-align: left!important;
+    font-size: 13px;
+}
+.sub-menu p:hover a{
+    color: #FFF!important;
+}
+.sub-menu p:hover{
+    background-color: #00935F;
+    color: #FFF!important;
+}
 /*====================header=============================*/
 /*====================index-news=============================*/
 
@@ -818,6 +859,7 @@ footer a {
 
 .foot-info {
     text-align: left;
+    width: 60%;
 }
 
 .foot-copyright {
@@ -825,5 +867,317 @@ footer a {
     font-size: 13px;
     letter-spacing: .6px;
 }
-
 /*====================footer============================*/
+/*====================about============================*/
+.indside-top{
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+    height: 260px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content:space-between;
+}
+#about.banner{
+    background-color: #00935F;
+    position: relative;
+    margin-top: 97px;
+}
+#about .text-area h3{
+    font-family: 'Palanquin Dark', sans-serif;
+    letter-spacing: .8px;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 260px;
+    left: 8%;
+    position: absolute;
+    z-index: 999;
+    color: #FFF;
+}
+#about .text-area {
+    position: relative;
+    background-color: #00935F;
+    width: 40%;
+}
+.img-wrapper {
+    position: relative;
+    width: 60%;
+}
+#about .img-wrapper:after{
+    content: url(../images/about-top-icon.svg);
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    bottom: -4px;
+    z-index: 999;
+}
+.img-wrapper img{
+    min-width: 870px;
+    top:-40%;
+    position: relative;
+} 
+
+.page-title{
+    width: 8%!important;
+    padding: 5%;
+    padding-top: 0;
+    padding-left: 0;
+    position: relative;
+    font-family: 'Noto Sans TC';
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    color: #302D2C;
+    float: left;
+}
+#firstsection{
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 90px;
+    padding:0 4%;
+}
+.about-history{
+    width: 92%;
+    position: relative;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.about-history.fade-in {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.history-text-wrapper{
+    width: 60%;
+    background-color: #DCE4EF;
+    padding: 6% 12% 10% 8%;
+    position: relative;
+    text-align: left;
+}
+.history-text-wrapper h1, .history-text-wrapper h2{
+    font-size: 32px;
+    line-height: 60px;
+    letter-spacing: 1.5px;
+}
+.history-text-wrapper h2{
+    margin-bottom: 40px;
+}
+.history-text-wrapper .editor{
+    line-height: 35px;
+    text-align: justify;
+}
+.history-pic{
+    width: 40%;
+    position: relative;
+    padding-top: 6%;
+    margin-top: 170px;
+}
+.history-pic img{
+    width: 115%;
+    position: absolute;
+    left: -15%;
+}
+.about-logo-wrapper{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding: 8%;
+    padding-right: 0;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.about-logo-wrapper.fade-in {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.logo-pic{
+    width: 40%;
+}
+.logo-pic img{
+    width:100%;
+}
+.logo-text{
+    width: 60%;
+    padding-left: 10%;
+    line-height: 35px;
+}
+.logo-text h1, .logo-text h2{
+    font-size: 32px;
+    line-height: 60px;
+    letter-spacing: 1.5px;
+}
+.logo-text h2{
+    margin-bottom: 40px;
+}
+
+.about-traffic{
+   width: 100%;
+   max-width: 1450px;
+   margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: row; 
+}
+.about-traffic .editor{
+    padding: 5% 0;
+    line-height: 35px;
+}
+.about-traffic img{
+    width: 100%;
+}
+.about-traffic h1, .about-traffic h2{
+    font-size: 32px;
+    line-height: 60px;
+}
+.traffic-left{
+    width: 50%;
+    background-color: #00935F;
+    text-align: left;
+    padding: 4%;
+    color: #FFF;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.traffic-left.fade-in {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.traffic-right{
+    width: 50%;
+    background-color: #FFDB00;
+    text-align: left;
+    padding: 4%;
+    color: #000;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.traffic-right.fade-in {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.traffic-right h2{
+    margin-top: 60px;
+}
+
+.about-bottom-wrapper{
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 5% 4%;
+    position: relative;
+}
+.about-bottom-wrapper .editor{
+    line-height: 35px;
+}
+.about-bottom-wrapper h1, .about-bottom-wrapper h2{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+.about-bottom-wrapper h1{
+    font-size: 24px;
+}
+.about-bottom-wrapper h2{
+    margin-bottom: 35px;
+}
+.about-staff{
+    width: 53%;
+    text-align: left;
+    padding: 5%;
+    padding-bottom: 8%;
+    background-color: #DCE4EF;
+    position: relative;
+    left: 30%;
+    z-index: 998;
+     -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.about-staff.fade-in {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.about-staff:before, .about-motto:before{
+    content: url('../images/staff-icon.svg');
+    transform: scale(1.8);
+    display: inline-block;
+    position: absolute;
+    left: -6px;
+    top: 58px;
+}
+.about-motto{
+    width: 43%;
+    text-align: left;
+    padding: 5%;
+    background-color: #003265;
+    color: #FFF;
+    float: right;
+    position: relative;
+    top: -50px;
+    z-index: 999;
+     -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateX(-50px);
+}
+.about-motto.fade-in {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.about-bottom-pic{
+    width: 55%;
+    position: absolute;
+    top: 180px;
+    z-index: 997;
+     -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateX(50px);
+}
+.about-bottom-pic.fade-in {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.about-bottom-pic img{
+    width: 100%;
+}
+.fix-bottom{
+    width: 100%;
+    padding: 5%;
+    position: relative;
+    float: left;
+}
+/*====================about============================*/
+
+
+
