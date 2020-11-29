@@ -173,8 +173,9 @@ color
     position: absolute;
     bottom: 15px !important;
     width: 100% !important;
-    text-align: center !important;
-    left: calc(-100vw*.46) !important;
+    max-width: 1450px;
+    text-align: left !important;
+    left: calc(100vw*.14);
 }
 
 .slick-dots li button:before,
@@ -227,7 +228,6 @@ color
     max-width: 1450px;
     margin: 0 auto;
     padding: 0;
-    overflow: hidden;
     top: 0;
     width: 100%;
 }
@@ -279,6 +279,7 @@ color
 .sub-menu{
     position: absolute;
     width: 180px!important;
+    display: block;
     text-align: left;
     background-color: #FFF;
     top: 97px;
@@ -884,21 +885,34 @@ footer a {
     position: relative;
     margin-top: 97px;
 }
-#about .text-area h3{
+.indside-top .text-area h3{
     font-family: 'Palanquin Dark', sans-serif;
-    letter-spacing: .8px;
-    font-size: 45px;
+    letter-spacing: .6px;
+    font-size: 36px;
     font-weight: 600;
-    line-height: 260px;
-    left: 8%;
-    position: absolute;
+    line-height: 55px;
+    display: inline-block;
+    vertical-align: middle;
     z-index: 999;
     color: #FFF;
 }
-#about .text-area {
+.indside-top .text-area::before{
+   content:'';
+  width:0;
+  height: 100%;
+  display:inline-block;
+  position:relative;
+  vertical-align:middle;
+}
+.indside-top .text-area {
     position: relative;
-    background-color: #00935F;
     width: 40%;
+    height: 260px;
+    text-align: left;
+    padding-left: 30px;
+}
+#about .text-area {
+    background-color: #00935F;
 }
 .img-wrapper {
     position: relative;
@@ -933,11 +947,13 @@ footer a {
 }
 #firstsection{
     width: 100%;
-    max-width: 1450px;
-    margin: 0 auto;
     position: relative;
     margin-top: 90px;
     padding:0 4%;
+}
+.inside-main{
+    max-width: 1450px;
+    margin: 0 auto;
 }
 .about-history{
     width: 92%;
@@ -1178,6 +1194,309 @@ footer a {
     float: left;
 }
 /*====================about============================*/
+/*====================about-other============================*/
+/* Style the tab */
+.tab {
+  float: left;
+  border: 0px solid #ccc;
+  background-color: #f1f1f1;
+  width: 5%;
+  height: 300px;
+}
 
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: #CFD9E8;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+}
 
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #98ACCB;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #DCE4EF;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 0px solid #ccc;
+  width: 95%;
+  border-left: none;
+  min-height: 600px;
+  margin-bottom: 90px;
+  background-color: #DCE4EF;
+  text-align: left;
+  padding: 5%;
+}
+.about-tab {
+    line-height: 35px;
+    letter-spacing: 1.5px;
+}
+.about-tab h3{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 40px!important;
+}
+/*====================about-other============================*/
+/*====================principle============================*/
+#team.banner{
+    background-color: #FFDB00;
+}
+#team .text-area h3 {
+    color: #000;
+}
+#team .img-wrapper:after{
+    content: url(../images/about-top-icon.svg);
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    bottom: -4px;
+    z-index: 999;
+}
+.team-wrapper{
+    width: 92%;
+    position: relative;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 120px;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.team-wrapper.fade-in {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.team-top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+.team-top-left, .team-top-right{
+    width: 50%;
+    padding: 4%;
+    text-align: left;
+}
+
+.team-top-left{
+    background-color: #DCE4EF;
+}
+.team-top-right{
+    background-color: #00935F;
+    color: #FFF;
+}
+.team-top-left h2{
+    font-family: 'Noto Sans TC';
+    line-height: 52px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+.team-top-left h3{
+    font-family: 'Palanquin Dark', sans-serif;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: .6px;
+}
+.team-top-right h5, .team-top-right p{
+    font-family: 'Noto Sans TC';
+    line-height: 22px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+.team-top-right h5{
+    margin-bottom: 60px;
+    letter-spacing: 3px;
+}
+
+.team-main{
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: #DCE4EF;
+    padding: 8%;
+}
+.team-main p{
+    text-align: justify;
+    line-height: 35px;
+    letter-spacing: .6px;
+}
+.team-main img{
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+/*====================principle============================*/
+/*====================teach============================*/
+#teach-info.team-top-right{
+    background-color: #FFDB00;
+    color: #000;
+}
+.teacher{
+    width: 30%;
+    background-color: #003265;
+    padding: 35px;
+    color: #FFF;
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-right: 3%;
+}
+.teacher:nth-child(3n){
+    margin-right: 0;
+}
+/*====================teach============================*/
+/*====================list============================*/
+#inter.banner{
+    background-color: #003265;
+}
+#inter .img-wrapper:after{
+    content: url(../images/list-top-icon.svg);
+    display: inline-block;
+    position: absolute;
+    right: -0.5px;
+    bottom: -4.5px;
+    z-index: 999;
+}
+.list-wrapper{
+    width: 92%;
+    position: relative;
+    float: left;
+    margin-bottom: 50px;
+}
+.list-wrapper ul li{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 23px;
+}
+.list-left{
+    display: block;
+    position: relative;
+    width: 20%;
+    height: 90px;
+    overflow-y: hidden;
+    background-color: #FFDB00;
+    background-image: url(../images/list-bg.svg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.list-left img{
+    width: 100%;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.list-left a:hover img{
+    opacity: .3;
+}
+.list-left a{
+    position: relative;
+}
+.list-left a:hover:after{
+    content: url(../images/list-hover-icon.svg);
+    position: relative;
+    right: -60px;
+    top: -73px;
+    display: inline-block;
+    z-index: 999;
+}
+.list-left:hover{
+    background-color: #00935F;
+    background-image: url(../images/list-hover-bg.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.list-right{
+    width: 80%;
+    text-align: left;
+    padding-left: 25px;
+}
+.list-title{
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    color: #003265;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.list-intro{
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 1.6px;
+    color: #302D2C;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.list-date{
+    font-size: 8px;
+    line-height: 22px;
+    color: #00935F;
+    letter-spacing: 1.2px;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.list-right a:hover .list-title, .list-right a:hover .list-intro, .list-right a:hover .list-date{
+    color: #00935F;
+}
+.pagination{
+    width: 92%;
+    position: relative;
+    height: 120px;
+    float: right;
+}
+.pagination ul{
+    display: flex;
+    flex-direction: row;
+}
+.pagination ul li{
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    background-color: #FFDB00;
+    margin-right: 15px;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.pagination ul li:hover, .pagination ul .active{
+   background-color: #00935F;
+   cursor: pointer;
+   color: #FFF;
+}
+/*====================list============================*/
 
