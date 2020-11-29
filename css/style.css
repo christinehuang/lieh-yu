@@ -1498,5 +1498,63 @@ footer a {
    cursor: pointer;
    color: #FFF;
 }
+
+/*detail*/
+
+.list-detail-wrapper .team-top-left{
+    width: 95%;
+}
+.team-top-left h2{
+    font-weight: 500;
+}
+.team-top-left p{
+    color: #00935F;
+}
+.list-detail-wrapper .team-top-right {
+    width: 5%;
+}
+.control-wrapper{
+    margin-top: -40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.goback{
+    width: 166px;
+    height: 48px;
+    background-color: #FFDB00;
+    color: #000;
+    line-height: 48px;
+    position: relative;
+}
+.goback a{
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    position: relative;
+    padding-left: 0;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.goback a:hover{
+    padding-left: 20px;
+}
+.goback a:hover:before{
+    content: url(../images/goback-arrow.svg);
+    display: inline-block;
+    position: relative;
+    left: -12px;
+}
+.category{
+    text-align: center;
+    padding-right: 1.5%;
+    line-height: 48px;
+    letter-spacing: 1.2px;
+}
+.category a{
+    color: #000;
+}
 /*====================list============================*/
 
