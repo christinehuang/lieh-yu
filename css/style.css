@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Spectral:400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
 @import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
 
 html,
@@ -51,7 +52,10 @@ a:focus {
     padding: 0px;
     text-decoration: none;
 }
-
+html[lang="en"] p, html[lang="en"] p a, html[lang="en"] li a, h5{
+    letter-spacing: 0.3px!important;
+    font-family: 'Montserrat', sans-serif!important;
+}
 /*=================
 color
 #DCE4EF   灰藍
@@ -94,6 +98,11 @@ color
 .banner-slide-wrapper .text-area h2 {
     margin-bottom: 12px;
     font-weight: 300;
+}
+html[lang="en"] .banner-slide-wrapper .text-area h2 {
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 24px;
 }
 
 .banner-slide-wrapper .text-area h1 {
@@ -428,7 +437,11 @@ color
     letter-spacing: 1px;
     color: #302D2C;
 }
-
+html[lang="en"] .news1-list li a, html[lang="en"] .news2-list li a{
+    letter-spacing: 0.3px!important;
+    font-family: 'Montserrat', sans-serif!important;
+    font-weight: 400;
+}
 .news1-list li a:hover {
     color: #003265;
 }
@@ -580,7 +593,11 @@ color
     letter-spacing: 1px;
     color: #FFF;
 }
-
+html[lang="en"] .inter-list li a{
+    letter-spacing: 0.3px!important;
+    font-family: 'Montserrat', sans-serif!important;
+    font-weight: 400;
+}
 .inter-list li a:hover {
     color: #FFDB00;
 }
@@ -751,7 +768,12 @@ color
     position: relative;
     padding: 2% 13% 5% 9%;
 }
-
+html[lang="en"] .link-title {
+    font-family: 'Palanquin Dark', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: .2px;
+}
 .link-title {
     font-family: 'Noto Sans TC';
     font-weight: 500;
@@ -796,7 +818,22 @@ color
     letter-spacing: .5px;
     line-height: 20px;
 }
-
+html[lang="en"] p, html[lang="en"] a{
+    letter-spacing: .4px;
+}
+html[lang="en"] h1, html[lang="en"] h2{
+    letter-spacing: .6px!important;
+}
+html[lang="en"] .link-wrapper li h5 {
+    font-family: 'Palanquin Dark', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: .2px;
+    line-height: 20px;
+}
+html[lang="en"] .link-wrapper li{
+    padding-bottom: 10px;
+}
 .link-wrapper li p {
     font-family: 'Noto Sans TC';
     font-weight: 300;
@@ -860,13 +897,27 @@ footer a {
 
 .foot-info {
     text-align: left;
-    width: 60%;
+    width: 50%;
+    padding-left: 60px;
 }
 
 .foot-copyright {
+    width: 30%;
     padding-top: 48px;
     font-size: 13px;
     letter-spacing: .6px;
+    text-align: right;
+}
+html[lang="en"] .foot-copyright {
+    padding-top: 48px;
+    font-size: 11px;
+    letter-spacing: .2px;
+}
+html[lang="en"] footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .3px;
 }
 /*====================footer============================*/
 /*====================about============================*/
@@ -944,6 +995,10 @@ footer a {
     font-size: 20px;
     color: #302D2C;
     float: left;
+}
+html[lang="en"] .page-title{
+    writing-mode: vertical-lr;
+  text-orientation: mixed;
 }
 #firstsection{
     width: 100%;
@@ -1052,6 +1107,7 @@ footer a {
 .about-traffic .editor{
     padding: 5% 0;
     line-height: 35px;
+    text-align: justify;
 }
 .about-traffic img{
     width: 100%;
@@ -1097,7 +1153,9 @@ footer a {
 .traffic-right h2{
     margin-top: 60px;
 }
-
+html[lang="en"] .traffic-right h2{
+    margin-top: 0px;
+}
 .about-bottom-wrapper{
     width: 100%;
     max-width: 1450px;
@@ -1438,7 +1496,7 @@ footer a {
     padding-left: 25px;
 }
 .list-title{
-    font-size: 16px;
+    font-size: 17px;
     line-height: 28px;
     letter-spacing: 2px;
     margin-bottom: 5px;
@@ -1449,7 +1507,7 @@ footer a {
     transition: all 0.8s;
 }
 .list-intro{
-    font-size: 10px;
+    font-size: 13px;
     line-height: 20px;
     letter-spacing: 1.6px;
     color: #302D2C;
@@ -1459,7 +1517,7 @@ footer a {
     transition: all 0.8s;
 }
 .list-date{
-    font-size: 8px;
+    font-size: 11px;
     line-height: 22px;
     color: #00935F;
     letter-spacing: 1.2px;
@@ -1468,6 +1526,9 @@ footer a {
     -o-transition: all 0.8s;
     transition: all 0.8s;
 }
+html[lang="en"] .list-title, html[lang="en"] .list-intro, html[lang="en"] .list-date{
+    letter-spacing: .2px;
+} 
 .list-right a:hover .list-title, .list-right a:hover .list-intro, .list-right a:hover .list-date{
     color: #00935F;
 }
@@ -1555,6 +1616,41 @@ footer a {
 }
 .category a{
     color: #000;
+}
+.download-wrapper{
+    width: 100%;
+    padding: 2% 8%;
+    padding-bottom: 0;
+    background-color: #CFD9E8;
+}
+.download-item{
+    width: 23%;
+    display: inline-block;
+    position: relative;
+    margin-right: 2.5%;
+    background-color: #FFDB00;
+    height: 48px;
+    margin-bottom: 25px;
+    line-height: 48px;
+    text-align: left;
+    padding-left: 18px;
+    letter-spacing: 1.4px;
+    float: left;
+    cursor: pointer;
+}
+.download-item:after{
+    content: url(../images/download-icon.svg);
+    display: inline-block;
+    position: absolute;
+    right: 18px;
+    transform: scale(1.5);
+}
+.download-item:nth-child(4n){
+    margin-right: 0;
+}
+.public-main h2{
+    text-align: left;
+    margin-bottom: 30px;
 }
 /*====================list============================*/
 
