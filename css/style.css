@@ -75,7 +75,7 @@ color
 }
 
 .slick-slide {
-    height: 290px;
+    height: 390px;
 }
 
 .banner-slide-wrapper {
@@ -106,9 +106,9 @@ html[lang="en"] .banner-slide-wrapper .text-area h2 {
 }
 
 .banner-slide-wrapper .text-area h1 {
-    font-size: 25.6px;
+    font-size: 32px;
     letter-spacing: 3px;
-    line-height: 29px;
+    line-height: 35px;
 }
 
 .banner-slide-wrapper .text-area h2 {
@@ -125,18 +125,19 @@ html[lang="en"] .banner-slide-wrapper .text-area h2 {
 }
 
 .banner-slide-wrapper .img-wrapper {
-    height: 350px;
+    height: 420px;
     width: 65%;
     overflow: hidden;
     position: relative;
 }
 
 .banner-slide-wrapper .img-wrapper img {
-    min-height: 350px;
-    min-width: 990px;
+    min-height: 420px;
+    min-width: 950px;
+    max-width: 950px;
     width: auto;
     position: relative;
-    top: -40%;
+    top: -35%;
 }
 
 .banner-slide-wrapper .img-wrapper:before {
@@ -416,6 +417,7 @@ html[lang="en"] .banner-slide-wrapper .text-area h2 {
     font-weight: 600;
     font-size: 20px;
     color: #302D2C;
+    line-height: 23px;
 }
 
 .news1-list ul,
@@ -575,6 +577,7 @@ html[lang="en"] .news1-list li a, html[lang="en"] .news2-list li a{
     font-weight: 600;
     font-size: 20px;
     color: #FFF;
+    line-height: 23px;
 }
 
 .inter-list ul {
@@ -687,7 +690,7 @@ html[lang="en"] .inter-list li a{
     left: 9.5%;
     top: 96px;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 23px;
     color: #000;
     z-index: 999;
 }
@@ -993,6 +996,7 @@ html[lang="en"] footer {
     width: 100%;
     font-weight: 600;
     font-size: 20px;
+    line-height: 23px;
     color: #302D2C;
     float: left;
 }
