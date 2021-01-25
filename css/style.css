@@ -1732,28 +1732,64 @@ html[lang="en"] .list-title, html[lang="en"] .list-intro, html[lang="en"] .list-
   z-index: 99999;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0, 1);
+  background-color: #003265;
   overflow-y: hidden;
   transition: 0.5s;
 }
 
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 15%;
   width: 100%;
-  text-align: center;
-  margin-top: 30px;
+  text-align: left;
+  padding-left: 40px;
 }
 
-.overlay a {
-  padding: 8px;
+.overlay a{
+  color: #FFF;
+}
+.mobile-menu-item a{
+   padding: 18px 12px;
   text-decoration: none;
-  font-size: 26px;
-  color: #818181;
+  font-size: 20px;
+  color: #00935F;
+    letter-spacing: 1.5px;
   display: block;
-  transition: 0.3s;
+  transition: 0.3s; 
 }
-
+.mobile-active{
+    color: #FFDB00!important;
+}
+.mobile-menu-lang{
+    margin-right: 30px;
+    text-align: right;
+    color: #FFF;
+}
+.mobile-menu-lang a{
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+display: inline-block;
+text-decoration: none;
+  font-size: 15px;
+  color: #FFF;
+  transition: 0.3s; 
+}
+.mobile-sub {
+   margin-left: 5px;
+   margin-top: -15px;
+}
+.mobile-sub li{
+   display: inline-block; 
+}
+.mobile-sub a{
+    font-size: 14px;
+    line-height: 24px;
+    padding: 5px 8px;
+    letter-spacing: 2px;
+    color: #FFF;
+    display: inline-block;
+}
 .overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
 }
@@ -1767,7 +1803,7 @@ html[lang="en"] .list-title, html[lang="en"] .list-intro, html[lang="en"] .list-
 .hamburger{
     font-size: 30px;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
     z-index: 9999;
@@ -1777,12 +1813,26 @@ html[lang="en"] .list-title, html[lang="en"] .list-intro, html[lang="en"] .list-
        display: none;
     }
   .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
   .overlay .closebtn {
   font-size: 24px;
     top: 15px;
     right: 20px;
   }
+
+  .foot-wrapper {
+    display: flex;
+    flex-direction: column;
+   }
+   .foot-info {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+  .foot-copyright {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+}
 }
 
 
