@@ -1771,6 +1771,7 @@ html[lang="en"] .list-title, html[lang="en"] .list-intro, html[lang="en"] .list-
 .album-list-wrapper ul{
   display: block;
   text-align: left;
+  margin-top: 30px;
 }
 .list-album{
     display: block;
