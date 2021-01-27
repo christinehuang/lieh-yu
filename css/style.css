@@ -1000,6 +1000,13 @@ html[lang="en"] footer {
     color: #302D2C;
     float: left;
 }
+.page-title span{
+    font-size: 17px;
+    font-weight: 400;
+    color: #8E817C;
+    margin-top: 20px;
+    display: block;
+} 
 html[lang="en"] .page-title{
     writing-mode: vertical-lr;
   text-orientation: mixed;
@@ -1477,7 +1484,7 @@ text-indent: 5px;
     display: inline-block;
     transform: scale(1.18);
     width: 12px;
-    z-index: 9999;
+    z-index: 9;
     left: 155px;
     top: 15px;
 }
@@ -1515,7 +1522,7 @@ text-indent: 5px;
     display: inline-block;
     transform: scale(1.18);
     width: 12px;
-    z-index: 9999;
+    z-index: 9;
     left: 170px;
     top: 15px;
 }
@@ -1736,8 +1743,101 @@ html[lang="en"] .list-title, html[lang="en"] .list-intro, html[lang="en"] .list-
     margin-bottom: 30px;
 }
 /*====================list============================*/
-
-
+/*====================album============================*/
+#life .text-area {
+    background-color: #E33D2A;
+}
+#life .img-wrapper:after{
+   content: url(../images/list-top-icon.svg);
+    display: inline-block;
+    position: absolute;
+    right: -0.5px;
+    bottom: -4.5px;
+    z-index: 999;
+}
+.album-list-wrapper{
+    width: 92%;
+    position: relative;
+    float: left;
+    margin-bottom: 50px;
+}
+.album-list-wrapper ul li{
+    display: inline-block;
+    width: 22%;
+    position: relative;
+    margin-bottom: 23px;
+    margin-right: 20px;
+}
+.album-list-wrapper ul{
+  display: block;
+  text-align: left;
+}
+.list-album{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 170px;
+    overflow-y: hidden;
+    background-color: #FFDB00;
+    background-image: url(../images/list-bg.svg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.list-album img{
+    width: auto;
+    height: 100%;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.list-album a:hover img{
+    opacity: .3;
+}
+.list-album a{
+    position: relative;
+}
+.list-album a:hover:after{
+    content: url(../images/list-hover-icon.svg);
+    position: relative;
+    right: -150px;
+    top: -116px;
+    display: inline-block;
+    z-index: 999;
+}
+.list-album:hover{
+    background-color: #00935F;
+    background-image: url(../images/list-hover-bg.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.album-name{
+    display: block;
+    width: 120px;
+    position: absolute;
+    z-index: 9;
+    letter-spacing: 1.2px;
+    bottom: 20px;
+    left: 20px;
+    color: #000; 
+    background-color: #FFDB00;
+    padding: 8px;
+    text-align: left;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.list-album:hover .album-name{
+    bottom: 60px;
+    color: #FFF;
+    background-color: rgba(0,147,95,0);
+}
+/*====================album============================*/
 .overlay {
   height: 0%;
   width: 100%;
@@ -1817,21 +1917,31 @@ text-decoration: none;
     font-size: 30px;
     cursor: pointer;
     position: fixed;
-    top: 20px;
+    width: 26px;
+    top: 22px;
     right: 20px;
     z-index: 9999;
+    display: none;
 }
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1280px){
     .top-menu li:not(.nav-logo) {
        display: none;
     }
-  .overlay {overflow-y: auto;}
+.hamburger {
+    display: block;
+}
+}
+@media only screen and (max-width: 1024px){
+    
+  .overlay {
+    overflow-y: auto;
+}
   .overlay .closebtn {
   font-size: 24px;
     top: 15px;
     right: 20px;
   }
-
+/*====================== menu =======================*/
   .foot-wrapper {
     display: flex;
     flex-direction: column;
@@ -1846,8 +1956,104 @@ text-decoration: none;
     text-align: left;
     padding-left: 20px;
 }
+.indside-top {
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+}
+.indside-top .text-area {
+    position: relative;
+    width: 100%;
+    height: 90px;
 }
 
+.img-wrapper {
+    width: 100%;
+    height: 170px;
+}
+.img-wrapper img {
+    min-width: 320px;
+    width: 100vw;
+    top: 0%;
+}
+#inter .img-wrapper:after {
+    right: -2px;
+    bottom: -5px;
+}
+#firstsection {
+    margin-top: 30px;
+}
+.page-title {
+    font-size: 15px;
+}
+/*====================== footer+top =======================*/
+.selector-wrapper select {
+    width: 100%;
+    font-size: 12.5px;
+    margin-right: 0;
+}
+.selector-wrapper .select-wrap:before {
+    left: 85%;
+}
+.select-wrap{
+    width: 49%;
+}
+.select-wrap:nth-child(2){
+    right: -3px;
+}
+.input-wrap{
+    width: 100%;
+}
+.select-input {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 13px;
+}
+.input-wrap:before {
+    left: 90%;
+    top: 25px;
+}
+/*====================== news list =======================*/
+.banner-slide-wrapper {
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+}
+.banner-slide-wrapper .text-area {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+.banner-slide-wrapper .text-area h1 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 25px;
+}
+.banner-slide-wrapper .text-area h2 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+.banner-slide-wrapper .text-area h3 {
+    font-size: 35px;
+    letter-spacing: 2.5px;
+    line-height: 40px;
+    font-weight: 400;
+}
+.banner-slide-wrapper .img-wrapper {
+    height: 320px;
+    width: 100%;
+}
+.banner-slide-wrapper .img-wrapper img {
+    min-height: auto; 
+    min-width: auto; 
+    max-width: auto; 
+    width: auto;
+    height: 100%;
+    position: relative;
+    top: 0;
+}
+}
 
-
-/*====================== menu =======================*/
