@@ -1002,11 +1002,25 @@ html[lang="en"] footer {
 }
 .page-title span{
     font-size: 17px;
+    line-height: 20px;
     font-weight: 400;
     color: #8E817C;
     margin-top: 20px;
     display: block;
+    padding-left: 5px;
 } 
+.page-title p{
+    writing-mode: vertical-lr;
+  text-orientation: mixed;
+  line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-left: 5px;
+    color: #8E817C;
+    font-weight: 400;
+}
 html[lang="en"] .page-title{
     writing-mode: vertical-lr;
   text-orientation: mixed;
@@ -1744,6 +1758,10 @@ html[lang="en"] .list-title, html[lang="en"] .list-intro, html[lang="en"] .list-
 }
 /*====================list============================*/
 /*====================album============================*/
+
+#life.banner{
+    background-color: #E33D2A;
+}
 #life .text-area {
     background-color: #E33D2A;
 }
@@ -1838,6 +1856,153 @@ html[lang="en"] .list-title, html[lang="en"] .list-intro, html[lang="en"] .list-
     color: #FFF;
     background-color: rgba(0,147,95,0);
 }
+/*====================album detail============================*/
+
+/*.row > .column {
+  padding: 0 8px;
+}*/
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 15px;
+  padding-right: 15px;
+}
+.column:first-child {
+    padding-right: 15px!important;
+    padding-left: 0!important;
+}
+.column:nth-child(3n+1){
+  padding-right: 15px;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+    z-index: 9999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0, .9);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+    position: absolute;
+    top: 60px;
+    right: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    z-index: 9999999999;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.modal-content .prev,
+.modal-content .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  opacity: 1;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.modal-content .prev{
+  left: -50px;
+}
+.modal-content .next {
+    right: -50px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  opacity: .7;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.column img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /*====================album============================*/
 .overlay {
   height: 0%;
@@ -2014,7 +2179,219 @@ text-decoration: none;
     left: 90%;
     top: 25px;
 }
-/*====================== news list =======================*/
+.list-left img {
+    width: auto;
+    height: 100%;
+    position: relative;
+    left: -29%;
+}
+.list-title {
+    font-size: 15px;
+    line-height: 20px;
+}
+.list-intro {
+    font-size: 13px;
+    line-height: 20px;
+    height: 40px;
+    overflow: hidden;
+}
+.indside-top .text-area h3 {
+    font-size: 26px;
+}
+.control-wrapper {
+    margin-top: 0px;
+}
+.team-top-left h2 {
+    line-height: 20px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.team-top-left h3 {
+    font-size: 18px;
+    line-height: 20px;
+}
+.team-top {
+    margin-bottom: 20px;
+}
+.team-main img {
+    margin-bottom: 10px;
+}
+.download-item {
+    width: 100%;
+    margin-right: 2.5%;
+}
+.public-main h2 {
+    font-size: 19px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.teacher {
+    width: 100%;
+    background-color: #003265;
+    padding: 15px;
+    color: #FFF;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-right: 0%;
+}
+.tab {
+    width: 13%;
+}
+.tabcontent {
+    width: 85%;
+}
+.about-tab h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px!important;
+}
+.history-pic img {
+    width: 100%;
+    position: relative;
+    left: 0;
+}
+.history-text-wrapper {
+    width: 100%;
+}
+.history-pic {
+    width: 100%;
+    padding-top: 0%;
+    margin-top: 0px;
+}
+.about-history {
+    width: 92%;
+    position: relative;
+    flex-direction: column;
+}
+.history-text-wrapper h1, .history-text-wrapper h2 {
+    font-size: 22px;
+    line-height: 30px;
+}
+.history-text-wrapper h2 {
+    margin-bottom: 10px;
+}
+.about-logo-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.logo-pic {
+    width: 100%;
+    text-align: center;
+}
+.logo-pic img {
+    width: 80%;
+    margin: 0 auto;
+}
+.logo-text {
+    width: 100%;
+    padding-left: 0%;
+    line-height: 26px;
+}
+.logo-text h1, .logo-text h2 {
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+}
+.logo-text h1{
+    margin-top: 20px;
+}
+.logo-text h2 {
+    margin-bottom: 10px;
+}
+.about-traffic {
+    flex-direction: column;
+}
+.traffic-left {
+    width: 100%;
+    padding: 8%;
+}
+.about-traffic h1, .about-traffic h2 {
+    font-size: 22px;
+    line-height: 30px;
+}
+.about-traffic .editor {
+    padding: 5% 0;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+.traffic-right {
+    width: 100%;
+    padding: 8%;
+}
+.traffic-right h2 {
+    margin-top: 0px;
+}
+.about-staff {
+    width: 73%;
+    left: 20%;
+}
+.about-motto {
+    width: 63%;
+    top: -20px;
+}
+.about-bottom-pic {
+    width: 75%;
+    top: 280px;
+}
+.about-bottom-wrapper h1 {
+    font-size: 18px;
+}
+.about-bottom-wrapper h1, .about-bottom-wrapper h2 {
+    font-size: 18px;
+}
+.about-bottom-wrapper h2 {
+    margin-bottom: 5px;
+}
+.about-staff:before, .about-motto:before {
+    content: url(../images/staff-icon.svg);
+    transform: scale(1.2);
+    display: inline-block;
+    position: absolute;
+    left: -32px;
+    top: -5px;
+}
+.album-list-wrapper ul li {
+    display: inline-block;
+    width: 48%;
+    margin-right: 2%;
+}
+.album-list-wrapper ul li:nth-child(2n){
+    margin-right: 0;
+}
+.goback {
+    width: 160px;
+}
+.column {
+    float: left;
+    width: 50%;
+}
+.page-title p {
+    line-height: 20px;
+    font-size: 12px;
+    padding-left: 0px;
+}
+.page-title span {
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 5px;
+    padding-left: 3px;
+}
+.modal {
+    padding-top: 30vh;
+}
+.modal-content .prev {
+    left: -8px;
+}
+.modal-content .prev, .modal-content .next {
+    top: 60%;
+    padding: 0;
+}
+.modal-content .next {
+    right: -15px;
+    width: 30px;
+    left: auto;
+}
+/*====================== news/inter/download list =======================*/
 .banner-slide-wrapper {
     display: flex !important;
     flex-direction: column;
