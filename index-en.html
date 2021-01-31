@@ -13,13 +13,13 @@
 
 <body style="overflow-x: hidden;">
     <header>
-        <nav>
+         <nav>
             <div class="top-menu">
                 <ul>
                     <li class="nav-logo">
                         <a href="index-en.html"><img src="images/nav-logo.svg" alt=""></a>
                     </li>
-                    <li><a href="news-list-en.html">News</a></li>
+                    <li><a class="active" href="news-list-en.html">News</a></li>
                     <li><a href="#">About</a>
                         <div class="sub-menu">
                             <p><a href="about-en.html">About</a></p>
@@ -33,11 +33,34 @@
                         </div>
                     </li>
                     
-                    <li><a href="inter-list-en.html">International</a></li>
+                    <li><a href="inter-list-en.html">International Education</a></li>
         
                     <li><a href="index.html">中</a>｜<a style="color: #00935F;" href="index-en.html">En</a></li>
                 </ul>
             </div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <ul>
+                     <li class="mobile-menu-item"><a href="#">About</a></li>
+                      <ul class="mobile-sub">
+                        <li><a class="mobile-active" href="about-en.html">About</a></li>
+                        
+                      </ul>
+                     <li class="mobile-menu-item"><a href="news-list-en.html">News</a></li>
+                     <li class="mobile-menu-item"><a href="#">Team</a></li>
+                     <ul class="mobile-sub">
+                        <li><a href="principal-en.html">Principal</a></li>
+                       
+                      </ul>
+                     <li class="mobile-menu-item"><a href="inter-list-en.html">International Education</a></li>
+                     
+                     
+                     <li class="mobile-menu-lang"><a href="index.html">中</a>｜<a class="mobile-active" href="index-en.html">En</a></li>
+                    </ul>
+                </div>
+            </div>
+            <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="images/menu.svg" alt=""></span>
         </nav>
     </header>
     <section class="banner">
@@ -199,6 +222,7 @@
             <div class="foot-copyright">© 2020 Liehyu National High School All rights reserved</div>
         </div>
     </footer>
+    <script src="js/js.js"></script>
     <!--slider-->
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js'></script>
