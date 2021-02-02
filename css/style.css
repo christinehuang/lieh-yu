@@ -806,6 +806,7 @@ html[lang="en"] .link-title {
     width: calc(100vw*.18) !important;
     margin-right: 2%;
     position: relative;
+    overflow: hidden;
 }
 
 .link-wrapper li a {
@@ -868,7 +869,15 @@ html[lang="en"] .link-wrapper li{
 .link-list .next-arrow img {
     transform: scale(2);
 }
-
+.link-list li img{
+    display: block;
+    height: 68px;
+    top: 10px;
+    left: 10px;
+    width: auto;
+    max-width: 100%;
+    position: absolute;
+}
 /*====================index-links=============================*/
 /*====================footer============================*/
 footer {
