@@ -423,7 +423,10 @@ html[lang="en"] .banner-slide-wrapper .text-area h2 {
     color: #302D2C;
     line-height: 23px;
 }
-
+html[lang="en"] .news1-list h2,
+html[lang="en"] .news2-list h2 {
+    font-family: 'Palanquin Dark', sans-serif;
+}
 .news1-list ul,
 .news2-list ul {
     padding-top: 35px;
@@ -2582,6 +2585,28 @@ text-decoration: none;
 }
 .link-list .prev-arrow, .link-list .next-arrow {
     right: -11%;
+}
+html[lang="en"] .news1-list h2, html[lang="en"] .news2-list h2 {
+    font-family: 'Palanquin Dark', sans-serif;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+}
+html[lang="en"] .news1 .news1-list h2{
+    display: none;
+}
+html[lang="en"] .news1-list h2{
+    display: block;
+    top: -110px;
+    right: -348px;
+}
+html[lang="en"] h1, html[lang="en"] h2, html[lang="en"] h3{
+    font-family: 'Palanquin Dark', sans-serif;
+}
+html[lang="en"] p{
+    letter-spacing: 0.2px!important;
+    font-size: 13px;
+    line-height: 28px;
+}
 }
 /*====================== index =======================*/
 }
