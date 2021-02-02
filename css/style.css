@@ -2607,6 +2607,10 @@ html[lang="en"] p{
     font-size: 13px;
     line-height: 28px;
 }
+html[lang="en"] .inter-wrapper:before {
+    transform: scale(1);
+    top: 523.5px;
+}
 }
 /*====================== index =======================*/
 }
