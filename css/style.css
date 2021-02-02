@@ -10,6 +10,10 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Noto Sans TC', 'Microsoft JhengHei', '微軟正黑體', 'Heiti TC', 'Segoe UI', SegoeUI, sans-serif;
+    overflow-x: hidden;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -2433,5 +2437,152 @@ text-decoration: none;
     position: relative;
     top: 0;
 }
+.news .news1 {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+}
+.news1:before {
+    left: auto;
+    transform: scale(.7);
+    top: 15px;
+    right: -35px;
+}
+.news1 .news1-pic, .news2 .news1-pic {
+    width: 70%;
+}
+.news1 .news1-list, .news2 .news1-list {
+    width: 100%;
+    padding-right: 8%;
+    padding-top: 0px;
+    padding-left: 30px;
+}
+.news1-list h2, .news2-list h2 {
+    font-family: 'Noto Sans TC';
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    color: #302D2C;
+    line-height: 23px;
+    position: absolute;
+    top: -100px;
+    right: -328px;
+}
+.news1-list ul, .news2-list ul {
+    padding-top: 15px;
+    padding-bottom: 55px;
+}
+.news .news2 {
+    width: 100%;
+    float: right;
+    padding-left:0;
+    padding-right:0;
+    background-color: #DCE4EF;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    height: auto;
+}
+.news2 .news1-list .more {
+    right: 0;
+    left: auto;
+    bottom: 0px;
+}
+.news1 .news1-pic img, .news2 .news1-pic img {
+    height: 290px;
+}
+.inter-wrapper {
+    width: 96%;
+    float: right;
+    padding-left: 0%;
+    background-color: #00935F;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+}
+.inter-wrapper:before {
+    transform: scale(1);
+    top: 580.5px;
+    right: 0;
+}
+.inter-list {
+    width: 100%;
+    padding-right: 8%;
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 25px;
+}
+.inter-pic {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    right: 90px;
+}
+.inter-pic img {
+    position: relative;
+    width: auto;
+    height: 268px;
+    min-width: auto;
+    left: auto;
+    bottom: -3.5px;
+    right: -40px;
+}
+.inter-list .more {
+    right: 0;
+    left: auto;
+    bottom: -3px;
+}
+.top-menu {
+    display: block;
+    height: 97px;
+    width: 100vw;
+    overflow: hidden;
+}
+.album-title:before {
+    left: 4%;
+    top: 30px;
+    transform: scale(1);
+}
+.album-title h2 {
+    left: 4%;
+    top: 76px;
+}
+.album-list .album-pic-wrapper {
+    width: 145px !important;
+    height: 145px;
+}
+.album-wrapper {
+    background-size: 190px;
+}
+.album-list {
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 8%;
+    padding-top: 105px;
+    height: 380px;
+}
+.album-list .prev-arrow, .album-list .next-arrow {
+    display: block;
+    position: absolute;
+    right: 8%;
+    top: 280px;
+    cursor: pointer;
+}
+.album-list .next-arrow {
+    top: 310px;
+}
+.index-belt {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.link-wrapper li {
+    width: 100% !important;
+}
+.link-list .prev-arrow, .link-list .next-arrow {
+    right: -11%;
+}
+/*====================== index =======================*/
 }
 
