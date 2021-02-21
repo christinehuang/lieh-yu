@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>烈嶼國中｜行政團隊</title>
+    <title>烈嶼國中｜關於烈中</title>
     <link rel="icon" href="images/fav.svg">
     <link rel="stylesheet" href="css/style.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css'>
@@ -44,8 +44,8 @@
                     <ul>
                      <li class="mobile-menu-item"><a href="#">About</a></li>
                       <ul class="mobile-sub">
-                        <li><a class="mobile-active" href="about-en.html">About</a></li>
-                        
+                        <li><a href="about-en.html">About</a></li>
+                        <li><a class="mobile-active" href="about-other-en.html">Other info</a></li>
                       </ul>
                      <li class="mobile-menu-item"><a href="news-list-en.html">News</a></li>
                      <li class="mobile-menu-item"><a href="#">Team</a></li>
@@ -63,38 +63,37 @@
             <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="images/menu.svg" alt=""></span>
         </nav>
     </header>
-    <section id="team" class="banner">
+    <section id="about" class="banner">
         <div>
             <div class="indside-top">
                 <div class="text-area">
-                    <h3>Administrative team</h3>
+                    <h3>About School</h3>
                 </div>
                 <div class="img-wrapper"><img src="images/banner4.png"></div>
             </div>
         </div>
     </section>
     <section id="firstsection" class="inside-main">
-        <div class="page-title">Administrative team</div>
-        <div class="team-wrapper">
-           <div class="team-top">
-               <div class="team-top-left">
-                   
-                   <h3>Principal</h3>
-               </div>
-               <div class="team-top-right">
-                   <h5>Yuang Gin Lin</h5>
-                   <p>Extension Number 10</p>
-                   <p>Online phone  57601</p>
-               </div>
-           </div>
-           <div class="team-main editor">
-               <img src="images/banner6.jpg" alt="">
-               <p>The Office of the President supports the work and priorities of President Salovey by managing and coordinating key programs, communications, and schedules. The office also serves as a first point of contact for those seeking to speak with the president, as well as for a number of guests and delegations invited to Yale.</p>
-           </div>            
+        <div class="about-tab">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Featured Programs</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Parents' Association</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Timetable</button>
+            </div>
+            <div id="London" class="tabcontent">
+                <h3>Featured Programs</h3>
+                <p>Yale is overseen by President Peter Salovey and the university’s board of trustees, who comprise the governing and policy-making body known formally as the Yale Corporation. The institution is also led and supported by the University Cabinet, an advisory body convened by the president, which consists of the deans, vice presidents, and other senior academic and administrative leaders.</p>
+            </div>
+            <div id="Paris" class="tabcontent">
+                <h3>Parents' Association</h3>
+                <p>Yale is overseen by President Peter Salovey and the university’s board of trustees, who comprise the governing and policy-making body known formally as the Yale Corporation. The institution is also led and supported by the University Cabinet, an advisory body convened by the president, which consists of the deans, vice presidents, and other senior academic and administrative leaders.</p>
+            </div>
+            <div id="Tokyo" class="tabcontent">
+                <h3>Timetable</h3>
+                <p>Yale is overseen by President Peter Salovey and the university’s board of trustees, who comprise the governing and policy-making body known formally as the Yale Corporation. The institution is also led and supported by the University Cabinet, an advisory body convened by the president, which consists of the deans, vice presidents, and other senior academic and administrative leaders.</p>
+            </div>
         </div>
-        
     </section>
-    
     <footer>
         <div class="foot-wrapper">
             <div class="foot-logo"><img src="images/foot-logo.svg" alt=""></div>
@@ -108,6 +107,24 @@
             <div class="foot-copyright">© 2020 Liehyu National High School All rights reserved</div>
         </div>
     </footer>
+    <script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
     <script src="js/js.js"></script>
     <!--slider-->
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>

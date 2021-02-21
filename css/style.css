@@ -1298,7 +1298,6 @@ html[lang="en"] .traffic-right h2{
 .tab {
   float: left;
   border: 0px solid #ccc;
-  background-color: #f1f1f1;
   width: 5%;
   height: 300px;
 }
@@ -1315,6 +1314,9 @@ html[lang="en"] .traffic-right h2{
   text-align: left;
   cursor: pointer;
   font-size: 17px;
+}
+html[lang="en"] .tab button {
+    font-family: 'Palanquin Dark', sans-serif;
 }
 
 /* Change background color of buttons on hover */
@@ -1445,6 +1447,7 @@ html[lang="en"] .traffic-right h2{
 .team-main img{
     max-width: 100%;
     margin-bottom: 30px;
+    height: auto;
 }
 /*====================principle============================*/
 /*====================teach============================*/
