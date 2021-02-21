@@ -1317,6 +1317,14 @@ html[lang="en"] .traffic-right h2{
 }
 html[lang="en"] .tab button {
     font-family: 'Palanquin Dark', sans-serif;
+    height: 80px;
+    width: 150px;
+    margin-top: 45px;
+    bottom: 50px;
+    line-height: 20px;
+    -webkit-transform: rotate(90deg) translateY(60%) translateX(-10px);
+    -moz-transform: rotate(90deg) translateY(60%) translateX(-10px);
+    -ms-writing-mode: tb-rl;
 }
 
 /* Change background color of buttons on hover */
@@ -2623,7 +2631,35 @@ html[lang="en"] .inter-wrapper:before {
     transform: scale(1);
     top: 523.5px;
 }
+
+html[lang="en"] .tab button {
+    font-family: 'Palanquin Dark', sans-serif;
+    height: 60px;
+    width: 120px;
+    margin-top: 55px;
+    bottom: 50px;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 15px;
+    -webkit-transform: rotate(90deg) translateY(-4%) translateX(-25px);
+    -moz-transform: rotate(90deg) translateY(-4%) translateX(-25px);
+    -ms-writing-mode: tb-rl;
 }
 /*====================== index =======================*/
+}
+@media only screen and (max-width: 690px){
+    html[lang="en"] .tab button {
+    font-family: 'Palanquin Dark', sans-serif;
+    height: 50px;
+    width: 120px;
+    margin-top: 55px;
+    bottom: 50px;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 10px;
+    -webkit-transform: rotate(90deg) translateY(70%) translateX(-20px);
+    -moz-transform: rotate(90deg) translateY(70%) translateX(-20px);
+    -ms-writing-mode: tb-rl;
+}
 }
 
