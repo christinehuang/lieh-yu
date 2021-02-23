@@ -1898,6 +1898,8 @@ html[lang="en"] .list-title, html[lang="en"] .list-intro, html[lang="en"] .list-
 .column {
   float: left;
   width: 25%;
+  height: 20vh;
+  overflow: hidden;
   margin-bottom: 15px;
   padding-right: 15px;
 }
@@ -2391,6 +2393,8 @@ text-decoration: none;
 .column {
     float: left;
     width: 50%;
+    height: 15vh;
+    overflow: hidden;
 }
 .page-title p {
     line-height: 20px;

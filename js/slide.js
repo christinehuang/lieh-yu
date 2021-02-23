@@ -108,7 +108,7 @@ $(document).on('ready', function() {
                     breakpoint: 600,
                     settings: {
                         prevArrow: '<div class="slide-arrow prev-arrow"><img src="images/next-black-arrow.svg" alt=""></div>',
-            nextArrow: '<div class="slide-arrow next-arrow"><img src="images/prev-black-arrow.svg" alt=""></div>',
+                        nextArrow: '<div class="slide-arrow next-arrow"><img src="images/prev-black-arrow.svg" alt=""></div>',
                         slidesToShow: 2,
                         slidesToScroll: 2
                     }
