@@ -1455,7 +1455,7 @@ html[lang="en"] .tab button {
 .team-main img{
     max-width: 100%;
     margin-bottom: 30px;
-    height: auto;
+    height: auto!important;
 }
 /*====================principle============================*/
 /*====================teach============================*/
