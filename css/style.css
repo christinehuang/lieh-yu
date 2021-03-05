@@ -381,7 +381,7 @@ html[lang="en"] .banner-slide-wrapper .text-area h2 {
     position: relative;
     width: auto;
     height: 460px;
-    left: -50%;
+    left: -15%;
 }
 
 .news1:before {
@@ -1768,6 +1768,9 @@ html[lang="en"] .list-title, html[lang="en"] .list-intro, html[lang="en"] .list-
     letter-spacing: 1.4px;
     float: left;
     cursor: pointer;
+}
+.download-item a{
+    color: #302D2C;
 }
 .download-item:after{
     content: url(../images/download-icon.svg);
