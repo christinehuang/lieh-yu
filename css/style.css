@@ -1023,17 +1023,19 @@ html[lang="en"] footer {
     color: #8E817C;
     margin-top: 20px;
     display: block;
-    padding-left: 5px;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    padding-left: 11px;
 } 
 .page-title p{
     writing-mode: vertical-lr;
-  text-orientation: mixed;
-  line-height: 25px;
+    text-orientation: mixed;
+    line-height: 25px;
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 15px;
     letter-spacing: 1px;
-    padding-left: 5px;
+    padding-left: 10px;
     color: #8E817C;
     font-weight: 400;
 }
@@ -2130,6 +2132,11 @@ text-decoration: none;
 }
 }
 @media only screen and (max-width: 1024px){
+    .top-menu li:first-child a,
+.top-menu li:first-child a:hover:not(.active) {
+    padding-right: 16px;
+    padding-top: 25px !important;
+}
     
   .overlay {
     overflow-y: auto;
@@ -2266,6 +2273,9 @@ text-decoration: none;
     margin-bottom: 15px;
     margin-right: 0%;
 }
+.teacher a{
+    color: #FFF;
+}
 .tab {
     width: 13%;
 }
@@ -2399,8 +2409,11 @@ text-decoration: none;
     height: 15vh;
     overflow: hidden;
 }
+.page-title a{
+    color: #8E817C;
+}
 .page-title p {
-    line-height: 20px;
+    line-height: 19px;
     font-size: 12px;
     padding-left: 0px;
 }
@@ -2408,7 +2421,7 @@ text-decoration: none;
     font-size: 13px;
     line-height: 16px;
     margin-top: 5px;
-    padding-left: 3px;
+    padding-left: 0px;
 }
 .modal {
     padding-top: 30vh;
@@ -2533,7 +2546,7 @@ text-decoration: none;
 }
 .inter-wrapper:before {
     transform: scale(1);
-    top: 580.5px;
+    top: 525px;
     right: 0;
 }
 .inter-list {
@@ -2557,7 +2570,7 @@ text-decoration: none;
     min-width: auto;
     left: auto;
     bottom: -3.5px;
-    right: -40px;
+    right: -17.5px;
 }
 .inter-list .more {
     right: 0;
