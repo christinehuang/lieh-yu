@@ -436,6 +436,8 @@ html[lang="en"] .news2-list h2 {
 .news1-list li,
 .news2-list ul {
     margin-bottom: 15px;
+    max-height: 40px;
+    overflow: hidden;
 }
 
 .news1-list li a,
@@ -594,6 +596,8 @@ html[lang="en"] .news1-list li a, html[lang="en"] .news2-list li a{
 
 .inter-list li {
     margin-bottom: 15px;
+    max-height: 40px;
+    overflow: hidden;
 }
 
 .inter-list li a {
@@ -805,6 +809,7 @@ html[lang="en"] .link-title {
     text-align: left;
     width: calc(100vw*.18) !important;
     margin-right: 2%;
+    min-height: 88px;
     position: relative;
     overflow: hidden;
 }
@@ -2213,6 +2218,7 @@ text-decoration: none;
     width: 100%;
     margin-top: 10px;
     font-size: 13px;
+    border-radius: 0px;
 }
 .input-wrap:before {
     left: 90%;
@@ -2509,7 +2515,7 @@ text-decoration: none;
     line-height: 23px;
     position: absolute;
     top: -100px;
-    right: -328px;
+    right: -228px;
 }
 .news1-list ul, .news2-list ul {
     padding-top: 15px;
@@ -2546,7 +2552,7 @@ text-decoration: none;
 }
 .inter-wrapper:before {
     transform: scale(1);
-    top: 525px;
+    top: 526px;
     right: 0;
 }
 .inter-list {
@@ -2637,7 +2643,7 @@ html[lang="en"] .news1 .news1-list h2{
 html[lang="en"] .news1-list h2{
     display: block;
     top: -110px;
-    right: -348px;
+    right: -228px;
 }
 html[lang="en"] h1, html[lang="en"] h2, html[lang="en"] h3{
     font-family: 'Palanquin Dark', sans-serif;
@@ -2649,7 +2655,7 @@ html[lang="en"] p{
 }
 html[lang="en"] .inter-wrapper:before {
     transform: scale(1);
-    top: 523.5px;
+    top: 467px;
 }
 
 html[lang="en"] .tab button {
