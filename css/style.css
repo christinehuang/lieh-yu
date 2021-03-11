@@ -1092,7 +1092,7 @@ html[lang="en"] .page-title{
     margin-bottom: 40px;
 }
 .history-text-wrapper .editor{
-    line-height: 35px;
+    line-height: 30px;
     text-align: justify;
 }
 .history-pic{
@@ -1456,7 +1456,7 @@ html[lang="en"] .tab button {
 }
 .team-main p{
     text-align: justify;
-    line-height: 35px;
+    line-height: 30px;
     letter-spacing: .6px;
 }
 .team-main img{
@@ -1692,10 +1692,13 @@ html[lang="en"] .list-title, html[lang="en"] .list-intro, html[lang="en"] .list-
     -o-transition: all 0.8s;
     transition: all 0.8s;
 }
-.pagination ul li:hover, .pagination ul .active{
+.pagination ul li:hover, .pagination ul li a:hover, .pagination ul .active{
    background-color: #00935F;
    cursor: pointer;
    color: #FFF;
+}
+.pagination ul li a{
+   color: #000;
 }
 
 /*detail*/
@@ -1845,7 +1848,7 @@ html[lang="en"] .list-title, html[lang="en"] .list-intro, html[lang="en"] .list-
 }
 .list-album img{
     width: auto;
-    height: 100%;
+    height: 105%;
     -webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
     -o-transition: all 0.8s;
@@ -1877,7 +1880,7 @@ html[lang="en"] .list-title, html[lang="en"] .list-intro, html[lang="en"] .list-
     position: absolute;
     z-index: 9;
     letter-spacing: 1.2px;
-    bottom: 20px;
+    bottom: 30px;
     left: 20px;
     color: #000; 
     background-color: #FFDB00;
@@ -2137,6 +2140,16 @@ text-decoration: none;
 }
 }
 @media only screen and (max-width: 1024px){
+
+    .team-main p {
+    text-align: justify;
+    line-height: 35px;
+    letter-spacing: .6px;
+}
+.history-text-wrapper .editor {
+    line-height: 35px;
+    text-align: justify;
+}
     .top-menu li:first-child a,
 .top-menu li:first-child a:hover:not(.active) {
     padding-right: 16px;
@@ -2599,8 +2612,8 @@ text-decoration: none;
     top: 76px;
 }
 .album-list .album-pic-wrapper {
-    width: 145px !important;
-    height: 145px;
+    width: 140px !important;
+    height: 140px;
 }
 .album-wrapper {
     background-size: 190px;
@@ -2686,6 +2699,19 @@ html[lang="en"] .tab button {
     -webkit-transform: rotate(90deg) translateY(70%) translateX(-20px);
     -moz-transform: rotate(90deg) translateY(70%) translateX(-20px);
     -ms-writing-mode: tb-rl;
+}
+}
+@media only screen and (max-width: 360px){
+    .nav-logo img {
+    height: 38px;
+    width: auto;
+}
+.top-menu li a {
+    padding: 30px 26px;
+    }
+    .album-list .album-pic-wrapper {
+    width: 120px !important;
+    height: 120px;
 }
 }
 
