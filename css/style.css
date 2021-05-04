@@ -1357,6 +1357,17 @@ html[lang="en"] .tab button {
   text-align: left;
   padding: 5%;
 }
+.tabcontent img{
+    max-width: 100%;
+    margin-bottom: 30px;
+    height: auto!important;
+}
+.tabcontent table{
+    max-width: 100%!important;
+    font-family: 'Noto Sans TC'!important;
+    margin-right: 0px!important;
+    margin-left: 0px!important;   
+}
 .about-tab {
     line-height: 35px;
     letter-spacing: 1.5px;
@@ -1463,6 +1474,12 @@ html[lang="en"] .tab button {
     max-width: 100%;
     margin-bottom: 30px;
     height: auto!important;
+}
+.team-main table{
+    max-width: 100%!important;
+    font-family: 'Noto Sans TC'!important;
+    margin-right: 0px!important;
+    margin-left: 0px!important;   
 }
 /*====================principle============================*/
 /*====================teach============================*/
