@@ -2172,7 +2172,9 @@ text-decoration: none;
     padding-right: 16px;
     padding-top: 25px !important;
 }
-    
+    .tabcontent table{
+    width: 100%!important;
+}
   .overlay {
     overflow-y: auto;
 }
