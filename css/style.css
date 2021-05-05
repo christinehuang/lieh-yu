@@ -2175,6 +2175,9 @@ text-decoration: none;
     .tabcontent table{
     width: 100%!important;
 }
+.team-main table{
+    width: 100%!important;
+}
   .overlay {
     overflow-y: auto;
 }
