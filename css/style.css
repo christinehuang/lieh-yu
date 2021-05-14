@@ -289,11 +289,12 @@ html[lang="en"] .banner-slide-wrapper .text-area h2 {
 }
 .top-menu li:hover .sub-menu{
     opacity: 1;
+    display: block;
 }
 .sub-menu{
     position: absolute;
     width: 180px!important;
-    display: block;
+    display: none;
     text-align: left;
     background-color: #FFF;
     top: 97px;
